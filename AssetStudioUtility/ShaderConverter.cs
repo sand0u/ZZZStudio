@@ -1028,7 +1028,7 @@ namespace AssetStudio
                     case ShaderGpuProgramType.DX11HullSM50:
                     case ShaderGpuProgramType.DX11DomainSM50:
                         {
-                            int start = 6;
+                            /*int start = 6;
                             if (m_Version == 201509030) // 5.3
                             {
                                 start = 5;
@@ -1036,8 +1036,8 @@ namespace AssetStudio
                             var buff = new byte[m_ProgramCode.Length - start];
                             Buffer.BlockCopy(m_ProgramCode, start, buff, 0, buff.Length);
                             var shaderBytecode = new ShaderBytecode(buff);
-                            sb.Append(shaderBytecode.Disassemble());
-                            //sb.Append(Encoding.UTF8.GetString(m_ProgramCode));
+                            sb.Append(shaderBytecode.Disassemble());*/
+                            sb.Append(Encoding.UTF8.GetString(m_ProgramCode));
                             //sb.Append("// shader disassembly not supported on DXBC");
                             break;
                         }
